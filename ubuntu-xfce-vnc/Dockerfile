@@ -55,5 +55,13 @@ ADD Desktop /root/Desktop
 ADD scripts /root/scripts
 RUN chmod +x /root/.vnc/xstartup /etc/X11/xinit/xinitrc /root/scripts/*.sh /root/Desktop/*.desktop
 
+# my stuff
+
+RUN apt-get update && apt-get install python-pip python-dev build-essential
+RUN pip install marionette_client
+ADD configs /configs/
+
+# end
+
 ENTRYPOINT ["/root/scripts/vnc_startup.sh"]
 CMD ["--tail-log"]
