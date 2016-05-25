@@ -18,4 +18,4 @@ exec /etc/X11/xinit/xinitrc
 x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
 #exec /usr/bin/xfce4-session &
 exec /etc/X11/xinit/xinitrc
-exec /configs/openfirefox.sh
+exec /configs/open-firefox.sh
