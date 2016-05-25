@@ -1,2 +1,2 @@
 #!/bin/sh
-python /test-configs/open-firefox.py
+python /configs/open-firefox.py

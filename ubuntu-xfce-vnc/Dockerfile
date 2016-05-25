@@ -60,6 +60,7 @@ RUN chmod +x /root/.vnc/xstartup /etc/X11/xinit/xinitrc /root/scripts/*.sh /root
 RUN apt-get update && apt-get install -y python-pip python-dev build-essential
 RUN pip install marionette_client
 ADD configs /configs/
+RUN chmod -R 755 /configs/
 
 # end
 
